@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.konstantin.gateopener.MainActivity"
+    android:background="@drawable/gate_background">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_up"
+        android:src="@drawable/up"
+        android:layout_above="@+id/move_down"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/move_down"
+        android:src="@drawable/down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/open_full"
+        android:src="@drawable/go_up"
+        android:layout_alignTop="@+id/move_up"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/move_up"
+        android:layout_toEndOf="@+id/move_up" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_full"
+        android:src="@drawable/go_down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/move_down"
+        android:layout_toEndOf="@+id/move_down" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/STOP"
+        android:layout_above="@+id/close_full"
+        android:layout_alignRight="@+id/close_full"
+        android:layout_alignEnd="@+id/close_full"
+        android:src="@drawable/stop"
+        android:layout_below="@+id/open_full"
+        android:layout_toRightOf="@+id/move_up"
+        android:layout_toEndOf="@+id/move_up"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>
